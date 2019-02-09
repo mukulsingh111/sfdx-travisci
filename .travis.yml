@@ -15,7 +15,7 @@ before_install:
 - export PATH=./sfdx/$(pwd):$PATH
 - sfdx --version
 - sfdx plugins --core
--sfdx force:auth:jwt:grant -u msingh@demoorg.com -f /Users/mukul.singh/SFDX/sfdx-travisci/assets/server.key -i 3MVG9dZJodJWITSsDJFFP3JhlZQzQfRnJLfd8bBpIH0SMhnH5kme31ypafpK9fAZLV9lnExEZkfxlG907J4yi --setdefaultdevhubusername -a HubOrg
+- sfdx force:auth:jwt:grant -u msingh@demoorg.com -f /Users/mukul.singh/SFDX/sfdx-travisci/assets/server.key -i 3MVG9dZJodJWITSsDJFFP3JhlZQzQfRnJLfd8bBpIH0SMhnH5kme31ypafpK9fAZLV9lnExEZkfxlG907J4yi --setdefaultdevhubusername -a HubOrg
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile $JWT_KEY_FILE --username $USERNAME --setdefaultdevhubusername -a HubOrg
 
 script:
